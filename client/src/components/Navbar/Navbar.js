@@ -6,7 +6,7 @@ import decode from 'jwt-decode'
 import {useDispatch} from 'react-redux'
 import useStyles from "./styles.js"
 import memoriesLogo from "../../images/memories-Logo.png";
-import memoriesText from "../../images/memories-Text.png";
+import memobarText from "../../images/memobar-Text.png";
 const Navbar = () => {
 
     const classes = useStyles();
@@ -35,7 +35,7 @@ const Navbar = () => {
     <AppBar className={classes.appBar} position='static' color='inherit'>
         <Link to="/" className={classes.brandContainer}>
         <img  src = 
-            {memoriesText} alt="icon" height='40px'/>
+            {memobarText} alt="icon" height='40px'/>
             <img className={classes.image} src = 
             {memoriesLogo} alt="memories" height='40px'/>
         </Link>
